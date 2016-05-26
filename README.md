@@ -3,7 +3,13 @@ This is an IntelliJ IDEA plugin marking the Maven scope to be `compile` of the `
 in [Spark](https://github.com/apache/spark) project.
 
 ## Download
-[latest](https://github.com/ChenZhongPu/Spark-Examples-Maven/raw/master/release/SparkExamplesMvn.jar)
+- [Latest](https://github.com/ChenZhongPu/Spark-Examples-Maven/raw/master/release/SparkExamplesMvn.jar)
+
+- [All downloads](download.md)
+
+It is recommended that you install `Spark Examples Maven` from IntelliJ IDEA Plugin Repositories.
+
+![](screenshots/install.png) 
 
 ## Motivation
 For the developers who building `Spark` in IntelliJ IDEA, they will found that they cannot run the `examples`
@@ -13,6 +19,7 @@ However, the number of dependencies of `examples` module is nearly 300. Hence, i
 
 The flowing is the part of dependencies of `examples` module (in Spark 1.6.1).
 ![](screenshots/dependencies.png)
+
 
 ## Usage
 After you install the plugin, it will only appear in `Spark` project (in other words, it will never appear in any other projects).

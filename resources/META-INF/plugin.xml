@@ -1,19 +1,35 @@
 <idea-plugin version="2">
   <id>com.sjtu.chenzhongpu.sparkexamplexmvn</id>
   <name>Spark Examples Maven</name>
-  <version>1.1</version>
+  <version>1.2.1</version>
   <vendor email="chenloveit@gmail.com" url="https://github.com/ChenZhongPu/Spark-Examples-Maven">Zhongpu Chen</vendor>
 
   <description><![CDATA[
   Spark Developer using IntelliJ IDEA may suffer from setting maven's <b>Provided</b> scope to
-  <b>Compile</b>, in order to run <b>examples</b> directly. <br/>
+  <b>Compile</b> manually, in order to run <b>examples</b> directly. <br/><br/>
   Tools -> Spark Examples
+  <br/>
+  <ul>
+    <li>To Compile : Set all the dependencies in Provided to Compile</li>
+    <li>Restore : Restore all the dependencies setting</li>
+  </ul>
+  Then sychronize <b>examples</b> module.
+  <br/>
+  <b>Notes:</b> <br/>
+  <ul>
+   <li>It will only appear in Spark project. In other words, it will never appear in any other projects</li>
+   <li>If you do not sychronize <b>examples</b> module manually, the IntelliJ IDEA may take 2-3 minutes to update it</li>
+   <li>Usually, it is unnecessary to restore, since the setting of IntelliJ IDEA will not modify the pom.xml</li>
+  </ul>
   <br/>
   See more at <a href="Spark-Examples-Maven">https://github.com/ChenZhongPu/Spark-Examples-Maven</a>
     ]]></description>
 
   <change-notes><![CDATA[
-
+  <ul>
+  <li>Update the description information</li>
+  <li>Fix bugs when multi Spark projects co-exit</li>
+  <ul>
     ]]>
   </change-notes>
 

@@ -53,11 +53,14 @@ public class MVNToCompileAction extends AnAction{
         });
 
         // save first
-        File cacheIML = new File(System.getProperty("user.home") + File.separator + ".spark-examples-maven");
+        // version 1.2, now create same dir under .spark-examples-maven
+        //File cacheIML = new File(System.getProperty("user.home") + File.separator + ".spark-examples-maven");
+        File cacheIML = new File(System.getProperty("user.home") + File.separator + ".spark-examples-maven" +
+            examplesDir.getAbsolutePath());
 
         try {
             if (!cacheIML.exists()) {
-                if (cacheIML.mkdir())
+                if (cacheIML.mkdirs())
                 {
                     Files.copy(files[0].toPath(),
                             new File(cacheIML.getAbsolutePath() + File.separator + files[0].getName()).toPath(),

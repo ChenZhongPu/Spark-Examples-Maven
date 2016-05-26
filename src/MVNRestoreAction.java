@@ -29,7 +29,7 @@ public class MVNRestoreAction extends AnAction{
     @Override
     public void actionPerformed(AnActionEvent anActionEvent) {
         File cacheIML = new File(System.getProperty("user.home") +
-                File.separator + ".spark-examples-maven");
+                File.separator + ".spark-examples-maven" + examplesDir.getAbsolutePath());
 
         try {
             if (cacheIML.exists())
