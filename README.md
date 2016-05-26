@@ -18,7 +18,7 @@ The flowing is the part of dependencies of `examples` module (in Spark 1.6.1).
 After you install the plugin, it will only appear in `Spark` project (in other words, it will never appear in any other projects).
 
 Go to `Tools -> Spark Examples`, choose:
-- `To Runtime`. Change all the `Provided` to `Runtime`
+- `To Compile`. Change all the `Provided` to `Compile`
 - `Restore`. Restore all the Maven scopes.
 
 ![](screenshots/usage.png)

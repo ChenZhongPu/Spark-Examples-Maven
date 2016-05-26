@@ -1,13 +1,15 @@
 <idea-plugin version="2">
   <id>com.sjtu.chenzhongpu.sparkexamplexmvn</id>
   <name>Spark Examples Maven</name>
-  <version>1.0</version>
-  <vendor email="chenloveit@gmail.com" url="http://zhongpu.info">Zhongpu Chen</vendor>
+  <version>1.1</version>
+  <vendor email="chenloveit@gmail.com" url="https://github.com/ChenZhongPu/Spark-Examples-Maven">Zhongpu Chen</vendor>
 
   <description><![CDATA[
-  Spark Developer using IntelliJ IDEA may suffer from setting maven's <b>provided</b> scope to
-  <b>compile</b>, in order to run <b>examples</b> directly. <br/>
+  Spark Developer using IntelliJ IDEA may suffer from setting maven's <b>Provided</b> scope to
+  <b>Compile</b>, in order to run <b>examples</b> directly. <br/>
   Tools -> Spark Examples
+  <br/>
+  See more at <a href="Spark-Examples-Maven">https://github.com/ChenZhongPu/Spark-Examples-Maven</a>
     ]]></description>
 
   <change-notes><![CDATA[
@@ -32,7 +34,7 @@
     <group id="SparkExamples.ActionMenu" text="_Spark Examples"
            description="Spark Examples Maven Scrope" popup="true">
       <add-to-group group-id="ToolsMenu" anchor="last"  />
-      <action id="SparkExamples.ToRuntime" class="MVNToCompileAction" text="To _Runtime" description="from provided to runtime" />
+      <action id="SparkExamples.ToRuntime" class="MVNToCompileAction" text="To _Compile" description="from provided to compile" />
       <action id="SparkExamples.Restore" class="MVNRestoreAction" text="Restore" description="restore the scope" />
     </group>
   </actions>

@@ -82,7 +82,7 @@ public class MVNToCompileAction extends AnAction{
             transformer.transform(source, result);
 
             Bus.notify(new Notification("BakckgroundChibiChara", "Spark examples maven",
-                    "Maven Srope has been RunTime. Synchronize Examples to make effect right now", NotificationType.INFORMATION));
+                    "Maven Srope has been Compile. Synchronize Examples to make effect right now", NotificationType.INFORMATION));
 
         } catch (Exception e) {
             Bus.notify(new Notification("BakckgroundChibiChara", "Spark examples maven",
