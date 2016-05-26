@@ -3,7 +3,7 @@ This is an IntelliJ IDEA plugin marking the Maven scope to be `compile` of the `
 in [Spark](https://github.com/apache/spark) project.
 
 ## Download
-[latest](release/SparkExamplesMvn.jar)
+[latest](https://github.com/ChenZhongPu/Spark-Examples-Maven/raw/master/release/SparkExamplesMvn.jar)
 
 ## Motivation
 For the developers who building `Spark` in IntelliJ IDEA, they will found that they cannot run the `examples`
